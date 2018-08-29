@@ -89,9 +89,9 @@ class purge(object):
         flag = input('Turn ' + self.name + ' on? y/n: ')
         if flag == 'y' or flag == 'yes':
             self.use_flag = True
-            error_flag = False
+            self.error_flag = False
         elif flag == 'n' or flag == 'no':
-            error_flag = False
+            self.error_flag = False
         else:
             print('Incorrect Response Issued. Please use y or n')
             self.error_flag = True
@@ -118,12 +118,12 @@ class date_purge(object):
         flag = input('Turn ' + self.name + ' on? y/n: ')
         if flag == 'y' or flag == 'yes':
             self.use_flag = True
-            error_flag = False
+            self.error_flag = False
         elif flag == 'n' or flag == 'no':
-            error_flag = False
+            self.error_flag = False
         else:
             print('Incorrect Response Issued. Please use y or n')
-            error_flag = True    
+            self.error_flag = True    
 
 #Child Class for objects where case sensitivity is unneeded
 class case_purge(purge):
