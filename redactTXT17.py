@@ -195,7 +195,7 @@ elif flag_setting == '4':
 
 elif flag_setting == '5':
     organization_name.set_flag()
-    if organization_name.error_flag ==True:
+    if organization_name.error_flag == True:
         organization_name.set_flag()
     organization_members.set_flag()
     if organization_members.error_flag == True:
